@@ -1,15 +1,13 @@
 
-def sum_of_array(numbers): s=0
+def sum_of_array(numbers):
+    s=0
     for num in numbers:
         s = num +s
     return s
 
 
 
-def
-
-
-add_default(num1=4, num2=5):
+def add_default(num1=4, num2=5):
     return num1 + num2
 
 
@@ -18,7 +16,7 @@ def sum_of_multiply(num1, num2):
 
 
 def sum_of_multiply_1(num1, num2, num3, num4):
-    o= s um_of_multiply(num1,n um2) * sum_of_multiply(num3, num4)
+    o= sum_of_multiply(num1,num2) * sum_of_multiply(num3, num4)
     return o
 
 
@@ -29,7 +27,7 @@ def string(name="moti"):
 def array_string(my_string):
     for i in my_string:
         f= 0
-        f= l en(i)
+        f= len(i)
         return f
 
 
@@ -37,29 +35,28 @@ def phone():
     sum= 0
     while True:
 
-        num= i nput("please enter your number: ")
-        if num[0]= =' 0' and num[1] ==' 5' and num[2]! =' 9' and num[3]= =' -' and len(num)= =1 1:
+        num= input("please enter your number: ")
+        if num[0]==' 0' and num[1] ==' 5' and num[2]!=' 9' and num[3]==' -' and len(num)==11:
             print("good")
-            sum+ =1
+            sum+=1
             print(f"You tried typing the phone number several {sum} times")
             break
-        else:p
-            rint("Wrong phone")
-        sum+ =1
+        else:print("Wrong phone")
+        sum +=1
         print(f"You tried typing the phone number several {sum} times")
 
 
 def calculate_the_number(num):
     num_2= 0
-    while num! =0 :
-        num_2= n um_2+ n um% 1 0
-        num= n um/ /1 0
+    while num!=0 :
+        num_2= num_2+ num% 10
+        num= num //10
     return num_2
 
 
 for one_num in range(1, 1000):
     sum_num= ( calculate_the_number(one_num))
-    if one_num% s um_num= =0 :
+    if one_num% sum_num ==0 :
         print (one_num)
 
 
@@ -167,6 +164,16 @@ def gcd(a, b):
 
 
 print(gcd(18, 48))
+
+
+def simplify_fraction(numerator, denominator):
+    num = gcd(numerator, denominator)
+    return numerator // num, denominator // num
+print(simplify_fraction(12, 24))
+
+
+
+
 
 
 
