@@ -1,6 +1,4 @@
 from datetime import datetime
-# print(current_year)
-
 
 class Student:
     def __init__(self, name, year, id):
@@ -17,7 +15,7 @@ class Student:
 student = Student("moti", 2001, 2122345)
 print(student.c_year())
 
-
+print("g")
 
 
 
