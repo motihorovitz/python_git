@@ -1,6 +1,5 @@
 from datetime import datetime
-current_year = datetime.now().year
-print(current_year)
+# print(current_year)
 
 
 class Student:
@@ -9,12 +8,14 @@ class Student:
         self.year = year
         self.id = id
 
-    def year(self):
+    def c_year(self):
        return datetime.now().year - self.year
 
     def list_stu(self):
         return len(self.name)
 
+student = Student("moti", 2001, 2122345)
+print(student.c_year())
 
 
 
