@@ -172,6 +172,16 @@ def simplify_fraction(numerator, denominator):
 print(simplify_fraction(12, 24))
 
 
+def sum_of_squares(list):
+    sum_u = 0
+    for i in list:
+        sum_u += i ** 2
+    return sum_u
+
+nums = [2, 5, 3, 12, 4]
+print(sum_of_squares(nums))
+
+
 
 
 
