@@ -3,7 +3,7 @@ current_year = datetime.now().year
 print(current_year)
 
 
-class student:
+class Student:
     def __init__(self, name, year, id):
         self.name = name
         self.year = year
@@ -14,6 +14,7 @@ class student:
 
     def list_stu(self):
         return len(self.name)
+
 
 
 
