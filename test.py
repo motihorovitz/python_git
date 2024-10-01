@@ -12,6 +12,9 @@ class student:
     def year(self):
        return datetime.now().year - self.year
 
+    def list_stu(self):
+        return len(self.name)
+
 
 
 
