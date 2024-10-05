@@ -183,7 +183,18 @@ print(sum_of_squares(nums))
 
 
 
+def find_min_max(list):
+    sum_num_1 = 0
+    sum_num_2 = list[0]
+    for i in list:
+        if i > sum_num_1:
+            sum_num_1 = i
+        if  i< sum_num_2:
+            sum_num_2 = i
+    return sum_num_1, sum_num_2
 
+list= [1,-2,3,4]
+print(find_min_max(list))
 
 
 
